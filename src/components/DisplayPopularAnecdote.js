@@ -1,9 +1,9 @@
 import React from 'react'
 
-const DisplayPopularAnecdote = ({ anecdotes, points }) => {
+const DisplayPopularAnecdote = ({ anecdotes, votes }) => {
     let mostVotes = 0
     for (let i = 1; i < anecdotes.length; i++) {
-        if (points[i] > points[mostVotes])
+        if (votes[i] > votes[mostVotes])
             mostVotes = i
     }
 
